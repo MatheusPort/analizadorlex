@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/Lexical.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+	<div class="main">
+		<form id="entry-form">
+			<div class="entryWord2">
+				<span class="entryWordSpan">
+					Digite uma palavra:
+				</span>
+				<input class="entryWordInput" autocorrect="off" spellcheck="false" type="text" id="word" list="auto-complete"
+				 autocomplete="off"></input>
+			</div>
+			<div class="entryWord3">
+				<button class="entryWordButton" type="submit" id="add">
+					Adicionar Palavra
+				</button>
+				<button class="entryWordButton" type="submit" id="remove">
+					Remover Palavra
+				</button>
+				<button class="entryWordButton" type="submit" id="resetDB">
+					Resetar Autômato
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="automoto">
+		<div class="scroll">
+			<div id="automat" class="table-container"></div>
+		</div>
+	</div>
+</body>
+
+</html>
